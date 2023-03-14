@@ -1,0 +1,80 @@
+@import url(/common/header.css);
+@import url(/common/footer.css);
+@import url(/common/fonts.css);
+@import url(/common/global.css);
+@import url(/common/variables.css);
+/* ----------------------------------------------------------- */
+
+#header {
+    margin: 0 auto;
+    background-color: white;
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* 0311 피드백, margin-right 35px */
+#content {
+    margin-right: 35px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    box-sizing: content-box;
+    border: 1px solid black;
+    justify-content: center;
+
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px black;
+
+
+}
+
+/* 맨아래 본인인증~비밀번호 확인*/
+
+/* 전체 */
+.box {
+    display: flex;
+    border : 1px solid black;
+    height : 200px;
+    justify-content : center;
+    align-items : center;
+}
+
+#CHECK_PW {
+    margin-left: 10px;
+    margin-top: -15px;
+
+
+    border: 1px solid black;  
+    border-radius: 3px;
+    padding: 10px;          
+    font-size: 15px;        
+}
+
+#check_btn {
+    margin-left: 30px;
+    margin-top: -15px;
+    width: 100px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+}
+
+#check_btn2 {
+    width: 200px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    background-color: #2678F3;
+    cursor: pointer;
+}

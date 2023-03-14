@@ -26,4 +26,4 @@ $(document).ready(function(){
         nextArrow: "<button type='button' class='slick-next'><img src='../html/image/right.png' style='width:30px;'></button>",
         prevArrow: "<button type='button' class='slick-prev'><img src='../html/image/left.png' style='width:30px;'></button>"
     })
-})
+});

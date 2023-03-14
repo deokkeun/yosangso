@@ -1,0 +1,92 @@
+@import url(/common/header.css);
+@import url(/common/footer.css);
+@import url(/common/fonts.css);
+@import url(/common/global.css);
+@import url(/common/variables.css);
+/* ----------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+    font-size: 12px;
+}
+
+.all {
+    margin: auto;
+    display: block;
+}
+
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+
+.fastmove {
+    width: 600px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+.fastmove > a{
+    border: 1px solid black;
+    width: 250px;
+    text-align: center;
+    padding : 10px 0;
+    
+
+}
+
+section {
+    
+    display: flex;
+    
+}
+
+section > div {
+    justify-content: center;
+    display: flex;
+    
+}   
+
+
+
+.img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(201, 196, 196);
+}
+
+.productname {
+    font-size: 14px;
+
+}
+
+.line {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.line >div {
+ margin-left: 7px;
+}
+
+.productname {
+    width: 200px;
+}
+
+.price {
+    color: red;
+}

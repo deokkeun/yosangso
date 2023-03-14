@@ -6,25 +6,6 @@
 /* ----------------------------------------------------------- */
 
 
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: 'Pretendard-Regular';
-    
-}
-
-
-body {
-    margin: 0px;
-    justify-content: center;
-}
-
 h1 {
     text-align: center;
 }
@@ -84,7 +65,7 @@ margin-top: 10px;
     border-radius: 5px;
     border-style: none;
     height: 25px;
-    width: 60px;
+    width: 70px;
 }
 
 .confirm {

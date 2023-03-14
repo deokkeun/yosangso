@@ -1,0 +1,345 @@
+@import url(/common/header.css);
+@import url(/common/footer.css);
+@import url(/common/fonts.css);
+@import url(/common/global.css);
+@import url(/common/variables.css);
+/* ---------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 콘텐츠 */
+#content {
+    display: flex;
+    /* 콘텐츠 전체 크기(높이) 수정 부분 입니다 */
+    height: 1500px;
+}
+/* 컨텐츠 공간 */
+#content > section {
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+/* 컨텐트 공간 내부 */
+.content-box {
+    display: flex;
+}
+/* 컨텐츠 공간 내부 왼쪽 영역 */
+.content-box-left {
+    flex-basis: 20%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+/* 컨텐츠 공간 내부 오른쪽 영역 */
+.content-box-right {
+    flex-basis: 80%;
+    height: 100%;   /*추가 */
+    /* border: 2px solid black; */  /*추가 */
+    width: 100%;  /*추가 */
+    display: flex;  /*추가 */
+    flex-direction: column;  /*추가 */
+    margin: 0px 50px 0px 50px;  
+}
+
+
+/* ----------------------------------------------------------------------------- */
+/* 컨텐츠 왼쪽 */
+/* 컨텐츠 왼쪽 박스내부 */
+.content-box-left-1 {
+    height: 100%;
+}
+/* 컨텐츠 왼쪽 박스내부 안에 박스 4개 */
+.content-box-left-1 > div {
+    margin: 100px 0;
+}
+/* 컨텐츠 왼쪽박스 title */
+.content-box-left-title {
+    width: 150px;
+    font-size: var(--font-size-x-large);
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+/* 컨텐츠 왼쪽 박스내부 title을 제외한 나머지 박스 */
+.content-box-left-1 > div div:not(:nth-child(1)) {
+    margin: 20px 10px;
+}
+/* 컨텐츠 왼쪽 박스 a태그 */
+.content-box-left-1 > div a {
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-size-medium);
+}
+
+/* ---------------------------------------------------------- */
+/* 컨텐츠 오른쪽 내용 */
+
+/* 주문내역조회 제목글씨 */
+.content-box-right > div:nth-child(1) {
+    flex-basis: 15%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* 구분선 구분 */
+
+
+.line {
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    margin: 3px 80px 3px 80px;
+}
+
+
+
+
+/* 주문1 박스 = orderList1 */
+.content-box-right > div:nth-child(2) {
+    flex-basis: 17%;
+    height: 150px;
+    border-radius: 30px;
+    border: 1px grey;
+    margin: 25px 80px 25px 80px;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
+    /* margin: 40px; */
+    /* border-bottom: 2px solid grey; */
+    /* 박스그림자 시계방향 */
+
+    /* display: flex; */
+}
+
+
+
+
+
+/* 주문2박스 = orderList2*/
+.content-box-right > div:nth-child(4) {
+    flex-basis: 17%;
+    height: 150px;
+    border-radius: 30px;
+    border: 1px grey;
+    margin: 30px 80px 25px 80px;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
+    /* margin: 40px; */
+    /* border-bottom: 2px solid grey; */
+    /* 박스그림자 시계방향 */
+    /* display: flex; */
+}
+
+
+
+/* 주문3박스 = orderList3*/
+.content-box-right > div:nth-child(6) {
+    flex-basis: 17%;
+    height: 150px;
+    border-radius: 30px;
+    border: 1px grey;
+    margin: 30px 80px 25px 80px;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.3);
+    /* margin: 40px; */
+    /* border-bottom: 2px solid grey; */
+    /* 박스그림자 시계방향 */
+    /* display: flex; */
+}
+
+
+/* 가운데선 박스 */
+.content-box-right > div:nth-child(3),
+.content-box-right > div:nth-child(5) {
+   flex-basis: 1%;
+   display: flex;
+   /* background-color: yellow; */
+   /* flex-direction: row; */
+   /* border-bottom:  2px solid rgba(0,0,0,0.2); */
+} 
+
+
+
+/* 페이지 넘기는 버튼 영역 */
+.content-box-right > div:nth-child(7) {
+    flex-basis: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    /* 양옆 화살표 아이콘 */
+    #allowBtn1, #allowBtn2{
+        width: 50px;
+         color : rgb(60, 60, 60);
+    }
+
+
+
+/* 공백 */
+.content-box-right > div:nth-child(8) {
+    flex-basis: 3%;
+}
+
+
+   
+
+
+
+
+
+
+/* 주문박스 공통사항 */
+.olUp {
+    flex-direction: row;
+    display: flex;
+    /* display: inline; */
+    /* background-color: lightpink; */
+    height: 40px;
+    margin: 20px 20px 2px 20px;
+    justify-content: center;
+     /* 마진 시계방향  */
+}
+    .olblank1 {
+        flex-basis: 4%;
+        flex-direction: row; 
+    }
+
+
+    .orderDate {
+        flex-basis: 20%;
+        flex-direction: row;
+        text-align : center;
+        /* align-content: center; */
+        /* justify-content: center; */
+        /* vertical-align: middle; */
+        /* display:flex; */
+        margin : auto;
+        border:none;
+        font-weight: bold;
+        /* border: 1px solid lightgrey; */
+    }
+
+    .del {
+        flex-basis: 20%;
+        display: flex;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        margin : 0px 0px 0px 28px;
+        font-weight: bold;
+    }
+
+    .delivery {
+        flex-basis: 50%;
+        /* background-color: red; */
+        text-align : center;
+        margin: auto;
+        border:none;
+        /* border: 1px solid lightgrey; */
+    }
+
+    .deliveryDate {
+        flex-basis: 50%;
+        /* background-color: blue; */
+        text-align : center;
+        margin: auto;
+        border:none;
+        color: blue;
+        /* border: 1px solid lightgrey; */
+    }
+
+    .olblank2 {
+        flex-basis: 57%;
+        /* background-color: green; */
+        
+    }
+
+
+.olDown {
+    flex-direction: row;
+    /* background-color: lightskyblue; */
+    display: flex;
+    height: 150px;
+    margin: 2px 20px 20px 5px; 
+    /* 마진 시계방향  */
+}
+
+    .olblank3 {
+        flex-basis: 4%;
+        flex-direction: row; 
+    }
+
+    .orderPhoto {
+        flex-basis: 20%;
+        align-items: center;
+        justify-content: center;
+        /* width: 20px; */
+        /* height: 100%; */
+        /* object-fit: contain; */
+        /* margin: auto; */
+        border: 1px solid lightgrey;
+        margin : 10px 0px 0px 10px;
+    }
+
+    /* #photo1 {
+        width: 100%; 
+        height: 100%;
+        object-fit: contain;
+    } */
+
+    .orderPhoto img{
+        width: 100%; 
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        margin : 10px 0px 0px 20px;
+    }
+
+
+        .infoSpec {
+            flex-basis:75%;
+            padding: 10px;
+        }
+
+
+        .infoPrice {
+            flex-basis: 25%;
+            padding: 10px;
+            color: grey;
+        }
+        
+
+     /*환불 및 취소 버튼  */
+    .cancel {
+    /* flex-basis: 30%; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: auto;
+    }
+
+        .btn {
+
+            width: 100px;
+            height: 30px;
+            background: #2678F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    
+    /* .OL1-2blank2{
+        flex-basis: 3%;
+        flex-direction: row; 
+    } */
+

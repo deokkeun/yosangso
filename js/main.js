@@ -15,6 +15,9 @@ document.getElementById("query").addEventListener("mouseover", e => {
 /* ----------------------------------------------------------- */
 
 
+/* ----------------------------------------------------------- */
+
+
 // 메인페이지 사진 슬라이더 영역
 var idx_lgth = $("#visual>div").length;
   var srt = 1;

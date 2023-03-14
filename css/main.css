@@ -6,39 +6,6 @@
 /* ----------------------------------------------------------- */
 
 
-
-/* 프리텐다드 폰트 추가 */
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:'Pretendard-Regular';
-}
-
-body{
-    /* width: 100vh; */
-    width: 120vh;
-    /* height: 1440px;  */
-     /* 메인페이지 전용 높이지정함 */
-    height: 2600px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*div {
-    border: 1px solid black;
-}*/
-
-
-/* ======================= 컨텐트 영역 ==========================*/
-
 .content-container{
     display: flex;
     height: 100%;
@@ -302,7 +269,50 @@ body{
 
 
 
+.BNitemPic a {
+    /* display: inline-block; */
+    width: 100%;
+    text-decoration: none;
+    /* margin: 0px; */
+}
 
+.BNitemPic > figure > a {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 글씨가 아래서 내려올 때 효과정도(?) */
+figure figcaption {
+    position: absolute;
+    bottom: 100%;
+    left: 0px;
+    z-index:-2;
+    color: black;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0;
+
+}
+
+figure:hover img {
+    transform: scale(1.0, 1.0);
+    transition: all .5s ease;
+    opacity: 0.15;
+}
+
+/* 호버시 글씨 내려올 때 위치 */
+figure:hover figcaption {
+    bottom: 30%;
+    opacity: 1;
+    transition: all .5s ease;
+} 
 
 
 
@@ -415,6 +425,7 @@ li {
     margin: 0 auto;
     overflow: hidden;
     object-fit: cover;
+    z-index : -5; 
 }
   
   
@@ -473,6 +484,7 @@ li {
     .bestPart > div:nth-child(2) {
         display:flex;   
         flex-basis: 70%;
+        /* vertical-align: top; */
         /* flex-direction: row; */
         /* background-color:thistle; */
     
@@ -644,8 +656,5 @@ li {
         padding: 5px;
         /* background-color: yellow; */
     }
-
-
-
 
 

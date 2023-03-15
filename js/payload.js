@@ -14,4 +14,8 @@ document.getElementById("query").addEventListener("mouseover", e => {
 
 /* ----------------------------------------------------------- */
 
-
+window.onload = function() {
+    setTimeout(function() {
+        window.open("payResult.html", target="_self");
+    }, 2000);
+};

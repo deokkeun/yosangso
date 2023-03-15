@@ -11,13 +11,11 @@
     font-size: 30px;
 }
 
-/* 3/14 100% -> 1500px; 수정 */
 #wrapper {
     position: relative;
     height: 1500px;
 }
 
-/* transform? 체크 */
 #content {
     position: absolute;
     left: 50%;
@@ -25,15 +23,11 @@
     width: 460px;
 }
 
-/* <-------------------------------------> */
-
 input:focus {
     outline: none;
 }
 
-/* 패딩 오토로 바꿔줬고, border 블랙으로 박스 할지 말지 결정 */
 .box {
-
     display: block;
     width: 100%;
     height: 50px;
@@ -45,7 +39,6 @@ input:focus {
     position: relative;
 }
 
-/* display inline-block??  */
 .int {
     display: inline-block;
     position: relative;
@@ -58,7 +51,6 @@ input:focus {
     text-align: left;
 }
 
-/* 수정 */
 .box {
     border-radius: 6px;
     width: 470px;
@@ -76,13 +68,6 @@ input:focus {
     margin-top: -10px;
     cursor: pointer;
 }
-
-
-
-/* 에러메세지 js 작성 후 재작성 */
-
-/* 버튼 */
-
 
 #cert {
     margin: 6px;
@@ -179,13 +164,10 @@ input:focus {
     cursor: pointer;
 }
 
-/* 3/14 padding 15px 주석처리 */
 #btnSignup {
     margin: 5%;
     width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    /* padding: 15px; */
+    height: 60px;
     border: 10px;
     justify-content: center;
     border-radius: 8px;

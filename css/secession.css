@@ -12,7 +12,6 @@
     text-align: center;
 }
 
-/* 0311 피드백, margin-right 35px */
 #content {
     margin-right: 35px;
     width: 100%;
@@ -24,13 +23,8 @@
 
     border-radius: 25px;
     box-shadow: 1px 1px 5px black;
-
-
 }
 
-/* 맨아래 본인인증~비밀번호 확인*/
-
-/* 전체 */
 .box {
     display: flex;
     border : 1px solid black;

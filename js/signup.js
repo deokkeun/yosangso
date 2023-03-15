@@ -13,3 +13,12 @@ document.getElementById("query").addEventListener("mouseover", e => {
 });
 
 /* ----------------------------------------------------------- */
+
+// 전체 동의하기
+function selectAll(selectAll) {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+    checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked
+    })
+}

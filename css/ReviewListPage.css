@@ -256,6 +256,12 @@
     /* border:solid 3px blue; */
 }
 
+.reviewListBox a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
 
 
 #reviewImages {

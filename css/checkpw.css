@@ -1,0 +1,49 @@
+@import url(/common/header.css);
+@import url(/common/footer.css);
+@import url(/common/fonts.css);
+@import url(/common/global.css);
+@import url(/common/variables.css);
+/* ----------------------------------------------------------- */
+
+#header {
+    margin: auto;
+    background-color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px black;
+    /* border-radius 음영효과? = shadow */
+    
+}
+
+#CHECK_PW {
+    margin: 0%;
+    border: 2px solid rgb(156, 153, 153);  
+    border-radius: 0px;    
+    padding: 10px;          
+    font-size: 15px;        
+}
+
+#check_btn {
+    margin: 5%;
+    width: 220px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    background-color: #2678F3;
+    cursor: pointer;
+}

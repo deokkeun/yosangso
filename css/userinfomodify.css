@@ -1,0 +1,111 @@
+@import url(/common/header.css);
+@import url(/common/footer.css);
+@import url(/common/fonts.css);
+@import url(/common/global.css);
+@import url(/common/variables.css);
+/* ----------------------------------------------------------- */
+
+
+h1 {
+    text-align: center;
+}
+
+.maintable {
+    justify-content: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+
+.maintable th, td {
+    border: 1px solid black;
+}
+
+.maintable th {
+    width: 90px;
+    height: 60px;
+}
+
+.maintable td {
+    width: 800px;
+}
+
+input {
+    margin-left: 20px;
+}
+
+#username {
+    border-style: none;
+}
+
+
+#changepw {
+    margin-top: 5px;
+}
+
+.usertel {
+    width: 80px;
+    margin-left: 0;
+}
+
+.adresstop {
+margin-top: 10px;
+}
+
+.adressbottom {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#adressfind {
+    background-color: rgb(40, 102, 236);
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    height: 25px;
+    width: 70px;
+}
+
+.confirm {
+    margin: auto;
+    width: 300px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.confirm > button {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(40, 102, 236);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+#cancel {
+    background-color: gray;
+}
+
+#modify {
+    margin-left: 50px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.pwbox {
+    height: 100px;
+}
+
+.telbox {
+    margin-left: 20px;
+    width: 300px;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/junsu/cart.css">
+        <link rel="stylesheet" href="../junsu/slick-1.8.1/slick-1.8.1/slick/slick.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3e3bbde124.js" crossorigin="anonymous"></script>
+        <title>장바구니</title>
+</head>
+<body>
+    <!-- 헤더, 컨텐츠 -->
+    <main>
+        
+        <!-- 헤더 -->
+        <header>
+            <!-- 헤더내용 박스 -->
+            <section id="header-box">
+                <!-- 로고 -->
+                <section>
+                    <a href="./index.html">
+                        <img src="/assets/로고-001.png" alt="로고" id="home-logo" width="90px">
+                    </a>
+                </section>
+
+                <!-- 메뉴 -->
+                <section id="header-box-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">전제품</a></li>
+                            <li><a href="">신상품</a></li>
+                            <li><a href="">고객리뷰</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!-- 검색 -->
+                <section>
+                    <article id="search-area">
+                        <form action="#" name="search-form">
+                            <fieldset>
+                                <input type="search" id="query" name="query"
+                                autocomplete="off">
+                                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                            </fieldset>
+                        </form>
+                    </article>
+                </section>
+
+                <!-- 마이페이지 -->
+                <section id="header-box-mypage">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="fa-solid fa-cart-shopping"></a>
+                            </li>
+                            <li>
+                                <a href="" class="fa-solid fa-user"></a>
+                            </li>
+                            <li>
+                                <a href="">로그인</a>
+                            </li>
+                            <li>
+                                <a href="">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        <!-- 헤더 끝 -->
+        </header>
+        <div class="container">
+            <div class="info-bar">
+                <div>
+                    <span>장바구니</span><span>> 주문/결제</span><span>> 완료</span>
+                </div>
+                <div>
+                    <button type="button" id="remove-button">전체 상품 삭제</button>
+                </div>
+            </div>
+            <div class="cart-in-product">
+                <form action="#" name="cart-form">
+                    <div class="cart-in-product-border">
+                        <!-- 이미지 -->
+                        <div>
+                            <div class="img-div">
+                                <img src="../junsu/image/330639_208664_214.jpg" id="image">
+                            </div>
+                        </div>
+                        <!-- 이름과 가격 -->
+                        <div class="product-detail-price">
+                            <!-- 상품내용 -->
+                            <div>
+                                네이쳐스 비타,<br>
+                                nature's vita<br>
+                                여성용 고기능 비타민
+                            </div>
+                            <!-- 개별가격 -->
+                            <div>
+                                <span class="prc-color">10,000 </span>원
+                            </div>
+                        </div>
+                        <!-- 수량 -->
+                        <div class="counting">
+                            <div>
+                                <input type="text" id="counting-input" disabled>
+                                <button type="button">+</button>
+                                <button type="button">-</button>
+                            </div>
+                        </div>
+                        <!-- 총 가격 -->
+                        <div>
+                            <div>상품 금액</div>
+                            10,000 원
+                        </div>
+                        <!-- 배송비 -->
+                        <div>
+                            <div>배송비</div>
+                            3000 원
+                            
+                        </div>
+                        <!-- x버튼 -->
+                        <div>
+                            <button type="button" id="cart-remove-x">X</button>
+                        </div>
+                    </div>
+                    <div class="price-tag">
+                        <div>  
+                            상품 금액 10,000원  +  (배송비) 3000 원 = 최종 결제 금액 13,000원 
+                        </div>
+                        <div>
+                            <button id="pay-button">결제하기</button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="post-slider">
+                    <p>추천 상품</p>
+                    <div class="post-wrap">
+                        <div class="post"><img src="../junsu/image/bill.jpg"></div>
+                        <div class="post"><img src="../junsu/image/mccoy.jpg"></div>
+                        <div class="post"><img src="../junsu/image/mingus.jpg"></div>
+                        <div class="post"><img src="../junsu/image/monk.jpg"></div>
+                        <div class="post"><img src="../junsu/image/miles.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 헤더, 컨텐츠 끝 -->
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <!-- 푸터 왼쪽 공백 -->
+        <section></section>
+
+        <!-- 푸터 내용 -->
+        <section id="footer-box">
+            <section>
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="/assets/로고-001.png" alt="로고"></a>
+                </div>
+                <div class="footer-nav">
+                    <div></div>
+                    <div>
+                        <pre>
+          
+ 회사명 : 요즘 생활의 소중함
+ 대표자 : 김철수
+ 사업자등록번호 : 209-12-12345
+ 통신판매업신고 : 2022-서울강남-1111호
+ 회사주소 : 서울특별시 강남구 테헤란로 130 
+                호산빌딩 5F, 6F
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> C/S  CENTER</div>
+ TEL : 02 - 1234 - 5678
+ OPEN : 평일 10 :00 ~ 17:00
+ (주말 및 공휴일 휴무)
+ E-MAIL : yosangso @yss.co.kr
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> SERVICE</div>
+ 고객님은 안전거래를 위해 현금 등으로 결제 시 
+ 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
+
+<a href="https://www.ftc.go.kr/" target="_blank"><img src="../../assets/공정거래위원회.png" alt="공정거래위원회" height="20px"></a>      <a href="https://kolsa.or.kr/" target="_blank"><img src="../../assets/KOLSA.png" alt="한국온라인쇼핑협회" height="20px"></a>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <a href="#">이용약관</a>
+                <span> | </span>
+                <a href="#">개인정보처리방침</a>
+                <span> | </span>
+                <a href="#">FAQ</a>
+                <span> | </span>
+                <a href="#">고객센터</a>
+                <span> | </span>
+                <span>Copyright &copy; KH Information Educational Institute D-Class</span>
+            </article>
+        </section>
+
+        <!-- 푸터 오른쪽 공백 -->
+        <section></section>
+    </footer>
+
+    <script src="../junsu/slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+    <script src="../../js/junsu/cart.js"></script>
+</body>
+</html>

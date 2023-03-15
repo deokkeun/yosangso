@@ -13,6 +13,50 @@ document.getElementById("query").addEventListener("mouseover", e => {
 });
 
 /* ----------------------------------------------------------- */
+let curPos = 0; // 현재 보이는 요소의 인덱스 번호
+
+function prev(){
+    if(curPos > 0){
+        $("button").removeAttr("disabled") // 모든 버튼 사용할 수 있게!
+        // toggleClass : 클래스가 있으면 제거, 없으면 생성!
+        $($(".item")[curPos]).toggleClass("active")
+        $($(".step")[curPos]).toggleClass("active-step")
+        $(".item").hide();
+        curPos -= 1;
+        $($(".item")[curPos]).toggleClass("active")
+        $($(".step")[curPos]).toggleClass("active-step")
+        $(".active").fadeIn(800); // 새로운 액티브 요소만 스르륵 나타난다
+    }
+    if(curPos == 0){
+        $(".prev")[0].setAttribute("disabled",'true')
+    }
+}
+function next(){
+    if(curPos < 3){
+        $("button").removeAttr("disabled")
+        $($(".item")[curPos]).toggleClass("active")
+        $($(".step")[curPos]).toggleClass("active-step")
+        $(".item").hide();
+        curPos += 1;
+        $($(".item")[curPos]).toggleClass("active")
+        $($(".step")[curPos]).toggleClass("active-step")
+        $(".active").fadeIn(800); 
+    }
+    if(curPos == 3){
+        $(".next")[0].setAttribute("disabled",'true')
+    }
+}
+function init(){
+    $(".item").hide()
+    $(".active").show()
+    $(".prev").click(prev)
+    $(".next").click(next)
+}
+$(document).ready(function() {
+    init();
+})
+
+
 $(".que").click(function() {
     $(this).next(".anw").stop().slideToggle(300);
    $(this).toggleClass('on').siblings().removeClass('on');

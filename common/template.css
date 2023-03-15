@@ -15,7 +15,7 @@
 #content > section {
     width: 1280px;
     margin: 0 auto;
-    /* border: 1px solid rgba(0, 0, 0, 0.05); */
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* ---------------------------------------------------------- */

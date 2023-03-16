@@ -132,7 +132,7 @@
 
 /* 내용 배경색 */
 .people-bg {
-    background-color: #ffb3b3;
+    background-color: #c6b3ff;
 }
 
 .person-img {
@@ -140,6 +140,6 @@
 }
 .person-img-heart {
     position: absolute;
-    left: 27px;
-    top: 0px;
+    left: 29px;
+    top: 35px;
 }

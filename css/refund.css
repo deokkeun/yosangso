@@ -1,0 +1,166 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/fonts.css);
+@import url(../common/global.css);
+@import url(../common/variables.css);
+/* ----------------------------------------------------------- */
+
+
+
+.container{
+    width: 1280px;
+    height: 100vh;
+    margin : auto
+}
+
+.info-bar{
+    width: 80%;
+    height: 100px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin: auto;
+
+}
+
+.info-bar span:first-child{
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.info-bar > div:first-child{
+    margin-bottom: 10px;
+
+}
+
+.info-bar > div:last-child{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(220, 220, 220, 0.929);
+    margin-bottom: 10px;
+}
+
+.outer-line{
+    border : 1px solid gainsboro;
+    margin : auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 60%;
+}
+
+.price-tag{
+    flex-basis: 30%;
+}
+
+.img-div > img{
+    width: 80%;
+    height: 80%;
+
+}
+
+.refund-in-product-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+    border-bottom: 1px solid gainsboro;
+}
+
+.refund-in-product-border>div{
+
+    text-align: center;
+}
+
+
+.refund-in-product-border>div:nth-child(1){
+    flex-basis: 25%;
+ 
+}
+.refund-in-product-border>div:nth-child(2){
+    flex-basis: 25%;
+
+}
+.refund-in-product-border>div:nth-child(3){
+    flex-basis: 10%;
+}
+.refund-in-product-border>div:nth-child(4){
+    flex-basis: 20%;
+}
+.refund-in-product-border>div:nth-child(5){
+    flex-basis: 20%;
+}
+
+.product-detail-price{
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.product-detail-price > div:first-child{
+    flex-basis: 70%;
+    margin-bottom : 70px;
+}
+
+.product-detail-price > div:last-child{
+    flex-basis: 3%;
+}
+
+.price-tag{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+
+.price-tag > div:first-child{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.price-tag > div:last-child{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#refund-button{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2678F3;
+    border-color: #2678F3;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+p {
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+}
+
+

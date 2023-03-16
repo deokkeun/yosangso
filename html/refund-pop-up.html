@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>refund-popup</title>
+        <style>
+          
+            @font-face {
+                font-family: 'Pretendard-Regular';
+                src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+                font-weight: 400;
+                font-style: normal;
+            }
+          
+            .container{
+                font-family: 'Pretendard-Regular';
+                margin: auto;
+                text-align: center;
+                margin-top: 80px;
+            }
+
+            .container button {
+                border: transparent;
+                margin: 20px 20px;
+                border-color: #2678F3;
+                background-color: #2678F3;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 50px
+
+
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>환불을 진행하시겠습니까?</div>
+            <span>
+                <button type="button" onclick="refundYes()">확인</button>
+            </span>
+            <span>
+                <button type="button" onclick="refundNo()">취소</button>
+            </span>
+        </div>
+        <script src="../js/refund-pop-up.js"></script>
+    </body>
+</html>

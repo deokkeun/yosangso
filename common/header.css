@@ -22,6 +22,7 @@ header{
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 1;
 }
 #header-box {
     width: 1280px;

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/productdetail.css">
+    <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
+    <script src="../js/productdetails.js"></script>
+    <script src="https://kit.fontawesome.com/8597ca188d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../slick-1.8.1/slick-1.8.1/slick/slick.js"></script>
+
+
+    <title>productdetail</title>
+</head>
+<body>
+    <!-- 헤더, 컨텐츠 -->
+    <main>
+        
+        <!-- 헤더 -->
+        <header>
+            <!-- 헤더내용 박스 -->
+            <section id="header-box">
+                <!-- 로고 -->
+                <section>
+                    <a href="./index.html">
+                        <img src="../assets/로고-001.png" alt="로고" id="home-logo" width="90px">
+                    </a>
+                </section>
+
+                <!-- 메뉴 -->
+                <section id="header-box-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">전제품</a></li>
+                            <li><a href="">신상품</a></li>
+                            <li><a href="">고객리뷰</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!-- 검색 -->
+                <section>
+                    <article id="search-area">
+                        <form action="#" name="search-form">
+                            <fieldset>
+                                <input type="search" id="query" name="query"
+                                autocomplete="off">
+                                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                            </fieldset>
+                        </form>
+                    </article>
+                </section>
+
+                <!-- 마이페이지 -->
+                <section id="header-box-mypage">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="fa-solid fa-cart-shopping"></a>
+                            </li>
+                            <li>
+                                <a href="./myPageMain.html" class="fa-solid fa-user"></a>
+                            </li>
+                            <li>
+                                <a href="./login2.html">로그인</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        <!-- 헤더 끝 -->
+        </header>
+        <section class="mainsec"> 
+            <div class="all">
+            <div>   
+                <!--productdetails-->
+                <!--제품 상세 컨테이너-->
+                <div class="productdetails-container">
+                    <!--제품 이미지-->
+                    <div class="product-img">
+                        <img src="../assets/collagenup.avif">
+                    </div>
+                    <!--제품이름, 가격, 수량, 구매가격, 구매및 장바구니-->
+                    <div class ="productover">
+                        <!--제품이름-->
+                        <div class="productNm">
+                            <h3>California Gold Nutrition (캘리포니아 골드 뉴트리션), CollagenUp, 가수분해 해양 콜라겐 펩타이드, 히알루론산 및 비타민C 함유, 무맛, 464g(16.37oz)</h3>
+                        </div>
+                        <!--가격-->
+                        <div class="productPr">
+                            <pre>43,000원</pre>
+                        </div>
+                        <!--배송비-->
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="del-cost">
+                            <pre>배송비 : 3000원</pre>
+                        </div>
+                        <br>
+                        <hr>
+                        <!--수량 가격-->
+                        <div class="count">
+                            수량 : <input type="number" id="countbox" min="1">
+                            <input type="number" id="costbox">
+                        </div>
+                        <br>
+                        <hr>
+                        <!--총 금액-->
+                        <div class="total-cost">
+                            <pre>총 상품금액</pre>
+                            <pre>46,000원</pre>
+                        </div>
+                        <br>
+                            <!--구매 버튼-->
+                            <div>
+                            <button type="summit" id="btn-purchase">구매하기</button>
+                            </div>
+                            <br>
+                            <div>
+                            <!--장바구니 버튼-->
+                            <button type="summit" id="btn-addcart">장바구니</button>
+                            </div>   
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                    <!--상세정보, 리뷰 ,문의하기로 화면을 이동해주는 버튼-->
+                    <div class="fm">
+                    <div class="fastmove">
+                        <a href="#">상세정보</a>
+                        <a href="#">리뷰</a>
+                        <a href="#">문의하기</a>
+                    </div>
+                    <hr>
+                    </div>
+                <br>
+                <br>
+                <br>
+                <!--상품정보-->
+                <div class="product-detail">
+                    <h3>상품 설명</h3>
+                     글루텐 무함유 유전자 변형 성분 무함유 LE 인증 건강한 뼈 성장과 골밀도를 유지하기 위한 필수 성분 보충제 비타민D를 보충하면 장기적인 효과가 있습니다. 비타민D는 인지 기능을 유지하도록 도와주고, 뼈와 면역계 건강을 증진하고, 건강한 혈압 수치 유지를 도와주며, 건강한 염증 반응과 내피 기능을 촉진합니다. 당사가 권장하는 일일 비타민D3 섭취량은 125mcg~200mcg(5,000IU~8,000IU)입니다. 햇빛 비타민인 비타민D3를 충분히 섭취하십시오. 하루 보충제 섭취 계획에 비타민D3도 추가하십시오. 비타민D3의 효능 젊고 건강한 인지 기능 유지에 도움 뼈 건강 및 면역 체계 기능 증진 심혈관 및 내피 건강 증진 혈압을 계속 정상 범위로 유지 햇빛 비타민 충분히 섭취하기 피부는 햇빛에 노출되면 비타민D를 생성하므로 햇빛 비타민이라고도 부릅니다. 하지만 잠깐 햇빛을 쬐는 것만으로는 부족하기에 비타민 D 보충제를 섭취하여 장기적 효과를 봐야 합니다. 당사가 권장하는 일일 비타민D3 섭취량은 125mcg~200mcg(5,000IU~8,000IU)입니다. 복용 중인 종합비타민에서 이미 25~75mcg(1,000~3,000IU)의 비타민D를 섭취 중이신 경우, 비타민D3 125mcg(5,000IU)은 최적의 비타민D를 섭취하는 데 적합합니다. 적정량의 비타민D를 꾸준히 보충하면 인지 기능이 더욱 활성화될 뿐만 아니라 뼈 및 면역계 건강 등에도 도움이 됩니다. 이 필수 비타민을 매일 충분히 섭취해야 하는 이유는 다음과 같습니다. 인지 건강 비타민D는 나이가 들어감에 따라 인지 건강과 기능을 유지하는 데 중요한 역할을 합니다. 건강한 혈청 비타민D 수치를 유지하면 인지 건강 테스트에서 더 좋은 결과를 얻고 노인의 인지 능력 유지를 지원합니다. 뼈와 면역 건강 뼈와 치아 건강을 위해 반드시 골기질 내로 칼슘이 전달돼야 합니다. 이러한 전달 과정의 효율성을 높이려면 비타민K, 필수 미네랄과 비타민D가 꼭 필요합니다. 비타민D는 면역 기능의 건강에도 큰 역할을 합니다. 심장 건강 및 혈압 관리 지원 비타민D는 체내 칼슘 균형 유지와 흡수를 돕습니다. 심혈관의 건강한 염증 반응 및 건강한 내피 기능도 촉진합니다. 비타민D는 레닌 수치가 지나치게 상승하는 것을 억제하는 데 도움을 줄 수도 있습니다. 정상적인 레닌 수치 유지는 혈압 안정화에도 도움이 됩니다. 충분한 비타민D 섭취 이 비타민D3 보충제는 소프트젤당 125mcg(5,000IU)의 비타민D3(콜레칼시페롤)를 제공합니다. 3개월 후에 25-하이드록시 비타민D 혈액 검사를 받아 복용량을 평가하고 조정하는 것이 좋습니다. 최적의 혈중 수치가 연중 내내 50~80ng/mL가 되어야 합니다. 상품 사용법 복용 전에 제품 설명서를 주의 깊게 읽고 지침을 따르십시오. 매일 소프트젤 1정을 음식과 함께 복용하거나 의사의 지시에 따라 복용하십시오. 포함된 다른 성분들 엑스트라버진올리브오일, 젤라틴, 중쇄중성지방오일, 글리세린, 정제수, 로즈메리추출물. 주의사항 하루 50mcg(2,000IU) 이상의 비타민D(식사와 보충제 모두 포함)를 섭취하는 경우 주기적으로 혈청 25-하이드록시 비타민D 수치를 측정해야 합니다. 의사가 권장하지 않는 한 하루에 10,000IU를 초과하지 마십시오. 혈중 칼슘 수치가 높은 경우 비타민D 보충제를 복용하지 마십시오. 어린이의 손이 닿지 않는 곳에 보관하십시오. 권장 복용량을 초과하지 마십시오. 외부 안전 밀봉이 훼손되거나 손상된 경우에는 구매하지 마십시오. 질병 때문에 치료를 받고 있거나 임신 또는 수유 중인 경우에는 건강 보충제를 사용하기 전에 의사와 상의하십시오. 뚜껑을 꼭 닫아 서늘하고 건조한 곳에 보관하십시오.
+
+                <!--추천 상품-->
+
+               <!--추천 상품-->
+               <div id="slideContainer">
+        
+                <div class="items">
+                    <button class="prev"><</button>
+                    <div class="item active"><img src="../assets/77.avif"></div>
+                    <div class="item"><img src="../assets/maca500.avif"></div>
+                    <div class="item"><img src="../assets/steidex.avif"></div>
+                    <div class="item"><img src="../assets/thorne.avif"></div>
+                    <button class="next">></button>
+                </div>
+                    <div class="stepper">
+                    <div class="step active-step"></div>
+                    <div class="step"></div>
+                        <div class="step"></div>
+                <div class="step"></div>
+                </div>  
+                </div>
+                <br>
+                <br>
+            
+                <!--productdetails end-->
+            
+                <!--review-->
+                <!--리뷰 컨테이너-->
+                <div class="review-container">
+                    <h2>구매후기</h2>
+                    <!--리뷰 1-->
+                    <div>
+                        <!--고객 아이콘 이름 게시일-->
+                        <div class="review-all">
+                            <!--고객 아이콘-->
+                            <div class="review-icon"><i class="fa-solid fa-circle-user"></i></div>
+                            <!--고객 이름-->
+                            <div class="review-name">윤현식</div>
+                            <!--게시일-->
+                            <div class="review-date"><input type="date"></div>
+                        </div>
+            
+                        <!--리뷰 내용-->
+                        <div class="review-main">
+                            <img src="../assets/re1.jpeg">
+                            <div>
+                                <pre class="review-con">
+                        유통기한이 넉넉해서 미리 구입했는데 품절이네요 이제품 2년째 복용중입니다 일단은 얼굴이마주름이 현저히 없어져서 저도 
+                        놀랄 정도구요 특히 무릎관절통증도 거의 사라졌어요 장기복용이 정답입니다 꾸준히 복용 해보세요.
+                                </pre>
+                            </div>    
+                        </div>
+            
+                    </div>
+                    <br>
+                    <br>
+                    <!--리뷰 2-->
+                    <div>
+                        <!--고객 아이콘 이름 게시일-->
+                        <div class="review-all">
+                            <!--고객 아이콘-->
+                            <div class="review-icon"><i class="fa-solid fa-circle-user"></i></div>
+                            <!--고객 이름-->
+                            <div class="review-name">최훈석</div>
+                            <!--게시일-->
+                            <div class="review-date"><input type="date"></div>
+                        </div>
+            
+                        <!--리뷰 내용-->
+                        <div class="review-main">
+                            <img src="../assets/re2.jpeg">
+                            <pre class="review-con">
+                        저분자 피쉬 콜라겐에 비타민c와 히알루론산까지 들어있는 제품이고 믿고 먹는 품질의 브랜드라 구매했어요 피부가 맑아지고 확실히
+                        효과 있어요 나이가 들면서 콜라겐이 줄어들기때문에 꾸준히 복용하려구요 한스푼에 물이나 음료 300ml 섞어서 먹으면 되요        
+                            </pre>
+                        </div>
+                        
+            
+                    </div>
+                </div>
+                <!--review end-->
+            
+                <br>
+                <br>
+                <br>
+                <br>
+            
+                <!--FAQ-->
+                <!--FAQ 컨테이너-->
+                
+                <div class="FAQ-container">
+                    <h2>FAQ</h2>
+                    <!--FAQ1-->
+                    <div>
+                        <!--고객 아이콘, 이름, 게시일-->
+                        <div class="FAQ-all">
+                            <!--고객 아이콘-->
+                            <div class="FAQ-icon"><i class="fa-solid fa-circle-user"></i></div>
+                            <!-- 고객 이름-->
+                            <div class="FAQ-name">김연수</div>
+                            <!-- 게시일-->
+                            <div class="FAQ-date"><input type="date"></div>
+                        </div>
+            
+                        <!-- 질문 내용-->
+                    <div id="Accordion_wrap">
+                        <div class="que">
+                         <span>하루에 몇 달톤을 먹어야 하나요?</span>
+                          <div class="arrow-wrap">
+                            <span class="arrow-top">↑</span>
+                           <span class="arrow-bottom">↓</span>
+                          </div>
+                        </div>
+                        <div class="anw">
+                         <span>하루에 300 달톤씩 복용하시면 됩니다</span>   
+                        </div>
+                    </div>
+            
+                    <div>
+                        <!--고객 아이콘, 이름, 게시일-->
+                        <div class="FAQ-all">
+                            <!--고객 아이콘-->
+                            <div class="FAQ-icon"><i class="fa-solid fa-circle-user"></i></div>
+                            <!-- 고객 이름-->
+                            <div class="FAQ-name">하현성</div>
+                            <!-- 게시일-->
+                            <div class="FAQ-date"><input type="date"></div>
+                        </div>
+            
+                        <!-- 질문 내용-->
+                    <div id="Accordion_wrap">
+                        <div class="que">
+                         <span>먹고나서 부작용이 있는거 같아요</span>
+                          <div class="arrow-wrap">
+                            <span class="arrow-top">↑</span>
+                           <span class="arrow-bottom">↓</span>
+                          </div>
+                        </div>
+                        <div class="anw">
+                         <span>즉시 복용 중지 후 병원을 찾아가 주세요</span>   
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </section> 
+
+            <br>
+            <br>
+            <br>
+
+        
+
+    <!-- 헤더, 컨텐츠 끝 -->
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <!-- 푸터 왼쪽 공백 -->
+        <section></section>
+
+        <!-- 푸터 내용 -->
+        <section id="footer-box">
+            <section>
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="../assets/로고-001.png" alt="로고"></a>
+                </div>
+                <div class="footer-nav">
+                    <div></div>
+                    <div>
+                        <pre>
+          
+ 회사명 : 요즘 생활의 소중함
+ 대표자 : 김철수
+ 사업자등록번호 : 209-12-12345
+ 통신판매업신고 : 2022-서울강남-1111호
+ 회사주소 : 서울특별시 강남구 테헤란로 130 
+                호산빌딩 5F, 6F
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> C/S  CENTER</div>
+ TEL : 02 - 1234 - 5678
+ OPEN : 평일 10 :00 ~ 17:00
+ (주말 및 공휴일 휴무)
+ E-MAIL : yosangso @yss.co.kr
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> SERVICE</div>
+ 고객님은 안전거래를 위해 현금 등으로 결제 시 
+ 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
+
+<a href="https://www.ftc.go.kr/" target="_blank"><img src="../assets/공정거래위원회.png" alt="공정거래위원회" height="20px"></a>      <a href="https://kolsa.or.kr/" target="_blank"><img src="../assets/KOLSA.png" alt="한국온라인쇼핑협회" height="20px"></a>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <a href="#">이용약관</a>
+                <span> | </span>
+                <a href="#">개인정보처리방침</a>
+                <span> | </span>
+                <a href="#">FAQ</a>
+                <span> | </span>
+                <a href="#">고객센터</a>
+                <span> | </span>
+                <span>Copyright &copy; KH Information Educational Institute D-Class</span>
+            </article>
+        </section>
+
+        <!-- 푸터 오른쪽 공백 -->
+        <section></section>
+    </footer>
+
+
+    <script src="../js/productdetail.js"></script>
+</body>
+</html>

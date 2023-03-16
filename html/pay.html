@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pay.css">
+    <script src="https://kit.fontawesome.com/881d1deef7.js" crossorigin="anonymous"></script>
+    <title>pay</title>
+</head>
+<body>
+    <!-- 헤더, 컨텐츠 -->
+    <main>
+        
+        <!-- 헤더 -->
+        <header>
+            <!-- 헤더내용 박스 -->
+            <section id="header-box">
+                <!-- 로고 -->
+                <section>
+                    <a href="./index.html">
+                        <img src="../assets/로고-001.png" alt="로고" id="home-logo" width="90px">
+                    </a>
+                </section>
+
+                <!-- 메뉴 -->
+                <section id="header-box-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">전제품</a></li>
+                            <li><a href="">신상품</a></li>
+                            <li><a href="./faq.html">고객리뷰</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <!-- 검색 -->
+                <section>
+                    <article id="search-area">
+                        <form action="#" name="search-form">
+                            <fieldset>
+                                <input type="search" id="query" name="query"
+                                autocomplete="off">
+                                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                            </fieldset>
+                        </form>
+                    </article>
+                </section>
+
+                <!-- 마이페이지 -->
+                <section id="header-box-mypage">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="" class="fa-solid fa-cart-shopping"></a>
+                            </li>
+                            <li>
+                                <a href="./myPageMain.html" class="fa-solid fa-user"></a>
+                            </li>
+                            <li>
+                                <a href="./login2.html">로그인</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </section>
+        <!-- 헤더 끝 -->
+        </header>
+
+
+
+        <!-- 바디 -->
+        <section class="content">
+            <!-- 왼쪽 공백 -->
+            <section></section>
+            <!-- 전체 내용 -->
+            <section>
+                <!-- 왼쪽 내용 -->
+                <section class="content-left">
+                    <!-- 상품정보 -->
+                    <section class="content-left-top">
+                        <section>
+                            <div class="title">장바구니 > <span id="title1">주문/결제</span> > 완료</div>
+                        </section>
+                        <section>
+                            <div class="stock-title">
+                                <div>상품정보</div>
+                                <div></div>
+                                <div>개당 금액</div>
+                                <div>수량</div>
+                                <div>합계</div>
+                            </div>
+                            <div class="stock-info">
+                                <div class="stock-info-in">
+                                    <div>상품정보</div>
+                                    <div>Nature.s Way(네이쳐스 웨이)</div>
+                                    <div>10,000원</div>
+                                    <div>10개</div>
+                                    <div>10,000원</div>
+                                </div>
+                                <hr>
+                                <div class="stock-info-in">
+                                    <div>상품정보</div>
+                                    <div>Nature.s Way(네이쳐스 웨이)</div>
+                                    <div>10,000원</div>
+                                    <div>10개</div>
+                                    <div>10,000원</div>
+                                </div>
+                                <hr>
+                                <div class="stock-info-in">
+                                    <div>상품정보</div>
+                                    <div>Nature.s Way(네이쳐스 웨이)</div>
+                                    <div>10,000원</div>
+                                    <div>10개</div>
+                                    <div>10,000원</div>
+                                </div>
+                                <hr>
+                                <div class="stock-info-in">
+                                    <div>상품정보</div>
+                                    <div>Nature.s Way(네이쳐스 웨이)</div>
+                                    <div>10,000원</div>
+                                    <div>10개</div>
+                                    <div>10,000원</div>
+                                </div>
+                                <hr>
+                                <div class="stock-info-in">
+                                    <div>상품정보</div>
+                                    <div>Nature.s Way(네이쳐스 웨이)</div>
+                                    <div>10,000원</div>
+                                    <div>10개</div>
+                                    <div>10,000원</div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- 배송지 정보 -->
+                    <section class="content-left-bottom">
+                        <section>
+                            <div class="title">배송지 정보</div>
+                        </section>
+                        <section>
+                            <form action="">
+
+                                <article>
+                                    <div>배송지명</div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="delivery">집
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="delivery">회사
+                                        </label>
+                                    </div>
+                                </article>
+                                
+                                <section class="delivery-info">
+                                    <div>
+                                        <span>이름</span>
+                                        <input type="text" placeholder=" 이름">
+                                    </div>
+                                    <div>
+                                        <span>연락처</span>
+                                        <input type="tel" placeholder=" 연락처">
+                                    </div>
+                                    <div>            
+                                        <span>배송지</span><input type="text" id="sample6_postcode" placeholder=" 우편번호" size="12">
+                                        <input type="button" onclick="sample6_execDaumPostcode()" value=" 우편번호 찾기 " id="zip"><br>
+                                    </div>
+                                    <div>
+                                        <span></span><input type="text" id="sample6_address" placeholder=" 주소" size="65"><br>
+                                    </div>
+                                    <div>
+                                        <span></span><input type="text" id="sample6_detailAddress" placeholder=" 상세주소" size="45">
+                                        <input type="text" id="sample6_extraAddress" placeholder=" 참고항목" size="35">
+                                    </div>
+                                    <div>
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("sample6_extraAddress").value = extraAddr;
+                
+                } else {
+                    document.getElementById("sample6_extraAddress").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample6_postcode').value = data.zonecode;
+                document.getElementById("sample6_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample6_detailAddress").focus();
+            }
+        }).open();
+    }
+</script>
+
+                                    </div>
+                                    <div id="request-box">
+                                        <span>요청사항</span>
+                                        <textarea name="" id="request" cols="81" rows="5" style="resize: none;" maxlength="150" placeholder=" 요청사항을 150자 이내로 작성해주세요."></textarea>
+                                        <span id="request-box-number"><span class="counter">0</span>/150</span>
+                                    </div>
+                                </section>
+                            </form>
+
+                    
+                        </section>
+                    </section>
+
+                </section>
+
+
+                <hr>
+
+
+                <!-- 오른쪽 내용 -->
+                <section class="content-right">
+                    <section class="content-right-top">
+                        <section>
+                             <div class="title">결제 상세</div>
+                        </section>
+                        <section>
+                             <div class="pay-detail">
+                                 <div class="pay-detail-top">
+                                    <div>상품금액</div>
+                                    <div>10,000원</div>
+                                 </div>
+                                 <div class="pay-detail-mid">
+                                     <div>
+                                         <div>
+                                            <div>적립금사용</div>
+                                            <div>-1000원</div>
+                                         </div>
+                                         <div>
+                                            <div>배송비</div>
+                                            <div>+3000원</div>
+                                         </div>
+                                     </div>
+                                     <div>
+                                        <div><strong>합계</strong></div>
+                                        <div><strong style="color: red;">+2000원</strong></div>
+                                     </div>
+                                 </div>
+                                 <div class="pay-detail-bottom">
+                                    <div>최종 결제 금액</div>
+                                    <div><span style="color: blue;">12,000</span>원</div>
+                                 </div>
+                             </div>
+                        </section>
+                    </section>
+
+                   <section class="content-right-mid">
+                       <section>
+                            <div class="payment-method">
+                                <div>
+                                    <div>결제수단</div>
+                                    <div>
+                                        <input type="radio" id="kakao"><label for="kakao">카카오페이 결제</label> <img src="../assets/payment_icon_yellow_small.png" alt="카카오페이" height="14px">
+                                    </div>
+                                </div>
+                                <div class="payment-method-text">
+                                    <div>품절시 환불 안내</div>
+                                    <div> 
+                                        <p>결제하신 수단으로 취소됩니다.</p>
+                                        <p>입점업체 배송은 낮은 확률로 상품이 품절일 가능성이 있습니다. <br><br> 이에 품절 시 빠르게 환불 처리해드립니다.</p>
+                                        <p>현금 환불의 경우, 예금정보가 일치해야 환불 처리가 가능합니다. <br><br> 은행명, 계좌번호, 예금주명을 정확히 기재 부탁드립니다.</p>
+                                        <p>환불 받으신 날짜 기준으로 3~5일(주말 제외) 후 결제대행사에서 <br><br> 직접 고객님의 계좌로 환불 처리됩니다.</p>
+                                    </div>
+                                </div>
+                                <div class="payment-method-text">
+                                    <div>주문자 동의</div>
+                                    <div>
+                                        <p>회원 본인은 구매 조건, 주문 내용 확인 및 결제에 동의합니다</p>
+                                        <p>개인정보 수집 및 이용 동의 <a href="">자세히</a></p>
+                                        <p>개인정보 제 3자 제공 동의 <a href="">자세히</a></p>
+                                        <p>전자결제대행 이용 동의 <a href="">자세히</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                       </section>
+                   </section>
+
+                   <section class="content-right-bottom">
+                       <section>
+                            <a href="./payload.html"><button id="pay-btn">결제하기</button></a>
+                       </section>
+                   </section>
+
+                </section>
+
+            </section>
+
+
+
+
+            <!-- 오른쪽 공백 -->
+            <section></section>
+
+        </section>
+
+        <!-- 결제/추천상품 공백 -->
+        <section></section>
+
+        <!-- 추천 상품 -->
+        <section class="recomend">
+            <section>
+                    <div class="controls">
+
+                        <button class="prev fa-solid fa-chevron-left"></button>
+
+                        <div class="slide_wrapper">
+                            <ul class="slides">
+                                <li>slide 01</li>
+                                <li>slide 02</li>
+                                <li>slide 03</li>
+                                <li>slide 04</li>
+                                <li>slide 05</li>
+                            </ul>
+                        </div>
+
+                        <button class="next fa-solid fa-chevron-right"></button>
+
+                    </div>
+            </section>
+        </section>
+
+
+
+
+
+        
+
+    <!-- 헤더, 컨텐츠 끝 -->
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <!-- 푸터 왼쪽 공백 -->
+        <section></section>
+
+        <!-- 푸터 내용 -->
+        <section id="footer-box">
+            <section>
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="../assets/로고-001.png" alt="로고"></a>
+                </div>
+                <div class="footer-nav">
+                    <div></div>
+                    <div>
+                        <pre>
+          
+ 회사명 : 요즘 생활의 소중함
+ 대표자 : 김철수
+ 사업자등록번호 : 209-12-12345
+ 통신판매업신고 : 2022-서울강남-1111호
+ 회사주소 : 서울특별시 강남구 테헤란로 130 
+                호산빌딩 5F, 6F
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> C/S  CENTER</div>
+ TEL : 02 - 1234 - 5678
+ OPEN : 평일 10 :00 ~ 17:00
+ (주말 및 공휴일 휴무)
+ E-MAIL : yosangso @yss.co.kr
+                        </pre>
+                    </div>
+                    <div>
+                        <pre>
+
+<div style="font-size: 16px; font-weight: bold;"> SERVICE</div>
+ 고객님은 안전거래를 위해 현금 등으로 결제 시 
+ 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.
+
+<a href="https://www.ftc.go.kr/" target="_blank"><img src="../assets/공정거래위원회.png" alt="공정거래위원회" height="20px"></a>      <a href="https://kolsa.or.kr/" target="_blank"><img src="../assets/KOLSA.png" alt="한국온라인쇼핑협회" height="20px"></a>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <a href="#">이용약관</a>
+                <span> | </span>
+                <a href="#">개인정보처리방침</a>
+                <span> | </span>
+                <a href="#">FAQ</a>
+                <span> | </span>
+                <a href="#">고객센터</a>
+                <span> | </span>
+                <span>Copyright &copy; KH Information Educational Institute D-Class</span>
+            </article>
+        </section>
+
+        <!-- 푸터 오른쪽 공백 -->
+        <section></section>
+    </footer>
+
+
+    <script src="../js/pay.js"></script>
+</body>
+</html>

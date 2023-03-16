@@ -5,6 +5,8 @@
 @import url(../common/variables.css);
 /* ----------------------------------------------------------- */
 
+
+
 .content-container{
     display: flex;
     height: 100%;
@@ -210,6 +212,7 @@
     height: 100%;
     /* margin: auto; */
     object-fit: contain;
+    
     /* width: 200px;
     height: 170px; */
     /* height: 170px; */
@@ -218,27 +221,14 @@
 }
 
 
-/* 베스트, 신제품명 글씨 */
-.BNitemName{
-    flex-basis: 20%;
-    padding: 5px;
-    font-size: 12px;
-    position: relative;
-    z-index : -1;
-
-    /* 글씨길면잘리는효과 */
-    /* width: 200px;
-    font-size: 50px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; */
 
 
-    /* text-decoration: underline; */
-    /* background-color: purple; */
+/* 베스트, 신제품, 제품 이름 글씨 효과 */
+.itemName a:hover, .BNitemName a:hover {
+    text-decoration: underline;
 }
+
+
 
 
 
@@ -251,9 +241,27 @@
     color:brown;
     padding: 5px;
     position: relative;
+    
     z-index : -1;
     /* background-color: red; */
 } 
+
+
+/* 베스트, 신제품명 글씨 */
+.BNitemName{
+    flex-basis: 20%;
+    padding: 5px;
+    font-size: 12px;
+    position: relative;
+    /* z-index : -1; */
+
+    /* z-index 설정해제하면 글씨가 보이고 안하면 a태그 호버설정이 안되고
+    어케해야되나요ㅠㅠㅠ*/
+
+    /* text-decoration: underline; */
+    /* background-color: purple; */
+}
+
 
 
 
@@ -281,11 +289,6 @@
 } */
 
 
-
-/* 제품이름 글씨 효과 */
-.BNitemName a:hover , .itemName a:hover {
-    text-decoration: underline;
-}
 
 
 
@@ -546,7 +549,7 @@ li {
     display: flex;
     width: 100%;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     /* background-color:yellow; */
 }
@@ -557,7 +560,7 @@ li {
     display: flex;
     width: 100%;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     /* background-color: green; */
 }

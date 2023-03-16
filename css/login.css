@@ -90,3 +90,7 @@
     justify-content: right;
     margin-top: -20px;
 }
+
+#custom-login-btn {
+    margin-left: 500px;
+}

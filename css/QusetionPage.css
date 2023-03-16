@@ -159,11 +159,48 @@
 }
 
 .middleOfList > div:nth-child(2){
-    flex-basis: 60%;
+    flex-basis: 40%;
     /* background-color: blue; */
     display: flex;
     justify-content: center;
 }
+
+/* ===================================================== */
+
+.answerBox{
+    background-color: #989a9b;
+    width: 100%;
+    height: 150px;
+    display: none;
+}
+
+
+.questionTitleBox{
+    display: flex;
+    width: 100%;
+}
+
+.answerInnerBox{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    overflow: scroll;
+}
+
+.questionTitleBox > p, .answerInnerBox > p{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================================================== */
 
 .middleOfList > div:nth-child(3){
     flex-basis: 20%;
@@ -178,6 +215,8 @@
     display: flex;
     justify-content: center;
 }
+
+
 
 
 #writingBtnBox{

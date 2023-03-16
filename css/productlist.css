@@ -82,3 +82,31 @@
     color: red;
 }
 
+.numListBox{
+    display: flex;
+    /* border:1px solid black; */
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+
+
+/* #listBox {
+    width: 300px;
+} */
+
+#listBox > a{
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+
+#numListBtnBox{
+    margin-right: 15px;
+}
+
+#numListBtnBox2{
+    margin-left: 15px;
+}
